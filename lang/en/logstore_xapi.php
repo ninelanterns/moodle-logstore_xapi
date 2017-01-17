@@ -44,3 +44,7 @@ $string['maxbatchsize_desc'] = 'Statements are sent to the LRS in batches. This 
         statements that will be sent in a single operation. Setting this to zero will cause all available statements to
         be sent at once, although this is not recommended.';
 $string['taskemit'] = 'Emit records to LRS';
+$string['mbox'] = 'mbox';
+$string['account'] = 'account';
+$string['useridentifier'] = 'User/Actor Identifier';
+$string['useridentifier_desc'] = 'How a user/actor is linked to the event in the LRS. <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#details-4">More details</a>.';
