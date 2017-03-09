@@ -49,7 +49,7 @@ class emit_task extends \core\task\scheduled_task {
         $manager = get_log_manager();
         $store = new store($manager);
 
-        $events = $DB->get_records('logstore_xapi_log');
+        $events = $DB->get_records('logstore_xapi_log', null, '', '*', 0, 500);
         $store->process_events($events);
 
         $DB->delete_records_list('logstore_xapi_log', 'id', array_keys($events));
